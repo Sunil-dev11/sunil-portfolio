@@ -1,64 +1,152 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Sunil Kumar | Android Developer</title>
+
 <style>
+
 body{
-font-family: Arial;
+font-family:Arial, sans-serif;
 margin:0;
 background:#0f172a;
 color:white;
 }
 
+/* Navigation */
+
+nav{
+background:#020617;
+padding:15px 40px;
+position:sticky;
+top:0;
+z-index:1000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* Header */
+
 header{
 text-align:center;
-padding:60px;
+padding:70px 20px;
 background:#1e293b;
 }
 
-h1{
+header h1{
 margin:0;
+font-size:36px;
 }
 
+header p{
+margin-top:10px;
+color:#cbd5f5;
+}
+
+.btn{
+padding:12px 20px;
+border-radius:8px;
+margin:8px;
+display:inline-block;
+font-weight:bold;
+}
+
+.github{
+background:#38bdf8;
+color:black;
+}
+
+.projectbtn{
+background:#22c55e;
+color:black;
+}
+
+.resume{
+background:#f59e0b;
+color:black;
+}
+
+/* Sections */
+
 section{
-padding:40px;
-max-width:900px;
+padding:50px 20px;
+max-width:1000px;
 margin:auto;
 }
 
+h2{
+margin-bottom:20px;
+}
+
+/* Project Card */
+
 .project{
 background:#1e293b;
-padding:20px;
-margin:20px 0;
+padding:25px;
+border-radius:12px;
+margin-top:20px;
+}
+
+/* Screenshots */
+
+.screenshots{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.screenshots img{
+height:420px;
 border-radius:10px;
 }
 
-a{
-color:#38bdf8;
-text-decoration:none;
-}
+/* Footer */
 
 footer{
 text-align:center;
-padding:20px;
+padding:25px;
 background:#1e293b;
+margin-top:40px;
 }
+
 </style>
+
 </head>
 
 <body>
-<nav style="background:#020617;padding:15px 40px;position:sticky;top:0;z-index:1000;">
 
-<span style="font-weight:bold;font-size:20px;">Sunil Kumar</span>
+<!-- Navigation -->
 
-<div style="float:right;">
-<a href="#about" style="margin-right:20px;color:white;text-decoration:none;">About</a>
-<a href="#projects" style="margin-right:20px;color:white;text-decoration:none;">Projects</a>
-<a href="#skills" style="margin-right:20px;color:white;text-decoration:none;">Skills</a>
-<a href="#contact" style="color:white;text-decoration:none;">Contact</a>
+<nav>
+
+<div style="font-weight:bold;font-size:20px;">
+Sunil Kumar
+</div>
+
+<div>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
 </div>
 
 </nav>
+
+<!-- Header -->
+
 <header>
 
 <h1>Sunil Kumar</h1>
@@ -67,73 +155,71 @@ background:#1e293b;
 
 <br>
 
-<a href="https://github.com/Sunil-dev11" target="_blank"
-style="padding:12px 20px;background:#38bdf8;color:black;border-radius:8px;margin-right:10px;">
+<a class="btn github" href="https://github.com/Sunil-dev11" target="_blank">
 GitHub
 </a>
 
-<a href="https://github.com/Sunil-dev11/internship-diary-app" target="_blank"
-style="padding:12px 20px;background:#22c55e;color:black;border-radius:8px;margin-right:10px;">
+<a class="btn projectbtn" href="https://github.com/Sunil-dev11/internship-diary-app" target="_blank">
 View Project
 </a>
 
-<a href="#" 
-style="padding:12px 20px;background:#f59e0b;color:black;border-radius:8px;">
+<a class="btn resume" href="#">
 Download Resume
 </a>
 
 </header>
 
-<br>
+<!-- About -->
 
-<a href="https://github.com/Sunil-dev11" target="_blank" 
-style="padding:12px 20px;background:#38bdf8;color:black;border-radius:8px;margin-right:10px;">
-GitHub
-</a>
+<section id="about">
 
-<a href="https://github.com/Sunil-dev11/internship-diary-app" target="_blank" 
-style="padding:12px 20px;background:#22c55e;color:black;border-radius:8px;">
-View Project
-</a>
+<h2>About Me</h2>
 
-</header>
-
-<section>
-<h2 id="about">About Me</h2>
 <p>
 I am an Android developer passionate about building modern mobile apps using Kotlin and Jetpack Compose.
 </p>
+
 </section>
 
-<section>
-<h2 id="projects">Projects</h2>
+<!-- Projects -->
 
-<div class="card">
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project">
 
 <h3>Internship Diary App</h3>
 
-<p>Android app to track internship work, hours, and learning progress.</p>
+<p>
+Android app to track internship work, hours, and learning progress.
+</p>
 
-<br>
-<div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:15px;">
+<div class="screenshots">
 
-<img src="https://raw.githubusercontent.com/Sunil-dev11/internship-diary-app/master/screenshots/dashboard_light.png" height="420">
+<img src="https://raw.githubusercontent.com/Sunil-dev11/internship-diary-app/master/screenshots/dashboard_light.png">
 
-<img src="https://raw.githubusercontent.com/Sunil-dev11/internship-diary-app/master/screenshots/add_entry_light.png" height="420">
+<img src="https://raw.githubusercontent.com/Sunil-dev11/internship-diary-app/master/screenshots/add_entry_light.png">
 
-<img src="https://raw.githubusercontent.com/Sunil-dev11/internship-diary-app/master/screenshots/entries_list_light.png" height="420">
+<img src="https://raw.githubusercontent.com/Sunil-dev11/internship-diary-app/master/screenshots/entries_list_light.png">
 
 </div>
-<br><br>
 
-<a href="https://github.com/Sunil-dev11/internship-diary-app" target="_blank">View Source Code</a>
+<br>
+
+<a href="https://github.com/Sunil-dev11/internship-diary-app" target="_blank">
+View Source Code
+</a>
 
 </div>
 
 </section>
 
-<section>
-<h2 id="skills">Skills</h2>
+<!-- Skills -->
+
+<section id="skills">
+
+<h2>Skills</h2>
 
 <div style="margin-top:15px;">
 
@@ -148,17 +234,30 @@ I am an Android developer passionate about building modern mobile apps using Kot
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
 
 </div>
+
 </section>
 
-<section>
-<h2 id="contact">Contact</h2>
+<!-- Contact -->
+
+<section id="contact">
+
+<h2>Contact</h2>
+
 <p>
-GitHub: <a href="https://github.com/Sunil-dev11">github.com/Sunil-dev11</a>
+GitHub:
+<a href="https://github.com/Sunil-dev11">
+github.com/Sunil-dev11
+</a>
 </p>
+
 </section>
+
+<!-- Footer -->
 
 <footer>
+
 <p>© 2026 Sunil Kumar</p>
+
 </footer>
 
 </body>
